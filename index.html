@@ -421,6 +421,55 @@
     </footer>
     <div class="backdrop">
       <div class="modal">
+        <p class="modal-title">Leave your contacts and we will call you back</p>
+        <form>
+          <div class="input-field">
+            <label for="user-name" class="modal-label">Name</label>
+            <div class="input-wrap">
+              <input
+                type="username"
+                name="user-name"
+                class="modal-input"
+                placeholder=""
+                id="user-name"
+              />
+              <svg class="modal-input-icon" width="18px" height="18">
+                <use href="./images/icons.svg#icon-person-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-field">
+            <label for="user-tel" class="modal-label">Phone</label>
+            <div class="input-wrap">
+              <input
+                type="tel"
+                name="user-tel"
+                class="modal-input"
+                placeholder=""
+                id="user-tel"
+              />
+              <svg class="modal-input-icon" width="18px" height="24">
+                <use href="./images/icons.svg#icon-phone-black"></use>
+              </svg>
+            </div>
+          </div>
+          <div class="input-field">
+            <label for="user-email" class="modal-label">Email</label>
+            <div class="input-wrap">
+              <input
+                type="email"
+                name="user-email"
+                class="modal-input"
+                placeholder=""
+                id="user-email"
+              />
+              <svg class="modal-input-icon" width="18px" height="24">
+                <use href="./images/icons.svg#icon-email-black"></use>
+              </svg>
+            </div>
+          </div>
+          <button type="submit" class="order-button">Send</button>
+        </form>
         <button type="button" class="modal-close">
           <svg class="close" width="8px" height="8px">
             <use href="./images/icons.svg#icon-close-black-18dp-2-1"></use>
