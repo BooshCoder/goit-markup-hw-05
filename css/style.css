@@ -152,6 +152,8 @@ p {
   opacity: 0;
   visibility: hidden;
   pointer-events: none;
+  transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
+    visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .is-open {
   opacity: 1;
@@ -168,6 +170,9 @@ p {
   left: 50%;
   transform: translate(-50%, -50%);
   padding: 72px 24px 24px;
+  box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .modal-close {
   display: flex;
@@ -622,13 +627,17 @@ p {
   outline: transparent;
   padding: 16px 8px;
 }
+.footer-label-input-btn {
+  gap: 24px;
+}
+
 .footer-form-btn {
   position: absolute;
   right: 0;
   bottom: 0;
   border-radius: 4px;
   padding: 8px 24px;
-  width: 165px;
+  min-width: 165px;
   height: 40px;
   background: #4d5ae5;
   display: flex;
@@ -663,4 +672,5 @@ p {
 .footer-fly-icon {
   fill: #fff;
   display: block;
+  margin-left: 16px;
 }
