@@ -144,6 +144,7 @@ p {
 /*?                          * MODAL WINDOW */
 
 .backdrop {
+  /* Додав крапку для класу */
   width: 100%;
   height: 100%;
   position: fixed;
@@ -155,11 +156,13 @@ p {
   transition: opacity 250ms cubic-bezier(0.4, 0, 0.2, 1),
     visibility 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .is-open {
   opacity: 1;
   visibility: visible;
   pointer-events: auto;
 }
+
 .modal {
   width: 408px;
   min-height: 584px;
@@ -174,12 +177,14 @@ p {
     0px 2px 1px rgba(0, 0, 0, 0.2);
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
+
 .modal-close {
   display: flex;
   align-items: center;
   justify-content: center;
   border-radius: 50%;
   border-width: 1px;
+  border-style: solid; /* Додано стилю для коректного відображення бордера */
   border-color: rgba(0, 0, 0, 0.1);
   background-color: #e7e9fc;
   width: 24px;
@@ -187,25 +192,31 @@ p {
   position: absolute;
   top: 24px;
   right: 24px;
+  cursor: pointer; /* Додано для покращення досвіду користувача */
 }
+
 .modal-close:hover {
   background-color: #404bbf;
 }
+
 .close {
   fill: #2e2f42;
 }
+
 .modal-close:hover .close {
   fill: #fff;
 }
+
 .modal-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
   letter-spacing: 0.02em;
   text-align: center;
-  color: var(--navy-blue);
+  color: var(--navy-blue); /* Якщо використовуєш змінні, тут можна замінити */
   margin-bottom: 16px;
 }
+
 .modal-input {
   width: 100%;
   height: 40px;
@@ -219,12 +230,15 @@ p {
 .modal-input:focus {
   border-color: #4d5ae5;
 }
+
 .modal-input:focus + .modal-input-icon {
   fill: #4d5ae5;
 }
+
 .input-field {
   margin-bottom: 8px;
 }
+
 .modal-label {
   font-weight: 400;
   font-size: 12px;
@@ -240,9 +254,11 @@ p {
   top: 50%;
   transform: translateY(-50%);
 }
+
 .input-wrap {
   position: relative;
 }
+
 .modal-text {
   width: 100%;
   height: 120px;
@@ -253,6 +269,7 @@ p {
   outline: transparent;
   resize: none;
 }
+
 .modal-text::placeholder {
   color: rgba(46, 47, 66, 0.4);
   font-weight: 400;
@@ -260,9 +277,11 @@ p {
   line-height: 1.16667;
   letter-spacing: 0.04em;
 }
+
 .modal-text:focus {
   border-color: #4d5ae5;
 }
+
 .modal-check-text {
   color: #8e8f99;
   font-weight: 400;
@@ -273,12 +292,14 @@ p {
   align-items: center;
   gap: 8px;
 }
+
 .check-link {
   color: #4d5ae5;
   line-height: 1.13;
   text-decoration: underline;
   text-decoration-skip-ink: none;
 }
+
 .modal-check-box {
   width: 16px;
   height: 16px;
@@ -289,12 +310,14 @@ p {
   justify-content: center;
   fill: transparent;
 }
+
 .modal-check:checked + .modal-check-text .modal-check-box {
   border-radius: 2px;
   background-color: #404bbf;
   border: 1px solid #404bbf;
   fill: #f4f4fd;
 }
+
 .send-button {
   display: block;
   border: 0;
@@ -310,6 +333,7 @@ p {
   min-width: 169px;
   height: 56px;
   margin-top: 16px;
+  cursor: pointer; /* Додано для покращення досвіду користувача */
 }
 
 /* !                             * SECTION HERO */
@@ -628,8 +652,19 @@ p {
   box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
   outline: transparent;
   padding: 16px 8px;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  padding-left: 16px;
+  color: #ffffff;
 }
-
+.footer-input::placeholder {
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 2;
+  letter-spacing: 0.04em;
+  color: #ffffff;
+}
 .footer-form-btn {
   border-radius: 4px;
   padding: 8px 24px;
@@ -654,14 +689,6 @@ p {
   font-size: 16px;
   line-height: 1.5;
   margin-bottom: 16px;
-  color: #ffffff;
-}
-
-.footer-input::placeholder {
-  font-weight: 400;
-  font-size: 12px;
-  line-height: 2;
-  letter-spacing: 0.04em;
   color: #ffffff;
 }
 
