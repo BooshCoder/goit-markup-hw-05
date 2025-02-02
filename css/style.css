@@ -606,6 +606,9 @@ p {
   min-width: 453px;
   height: 80px;
 }
+.footer-form-item {
+  display: flex;
+}
 .footer-input {
   position: absolute;
   left: 0;
@@ -638,12 +641,15 @@ p {
   line-height: 1.5;
   letter-spacing: 0.04em;
   text-align: center;
+  font-family: "Roboto", sans-serif;
   color: #ffffff;
 }
 .footer-form-title {
   font-weight: 500;
   font-size: 16px;
   line-height: 1.5;
+  margin-bottom: 16px;
+  color: #ffffff;
 }
 
 .footer-input::placeholder {
