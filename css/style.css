@@ -606,18 +606,20 @@ p {
 .footer-soc-link:focus {
   background-color: #31d0aa;
 }
+
 .footer-form {
   position: relative;
   min-width: 453px;
   height: 80px;
 }
+
 .footer-form-item {
   display: flex;
+  gap: 24px; /* Тепер працюватиме */
+  align-items: center; /* Вирівнюємо по центру */
 }
+
 .footer-input {
-  position: absolute;
-  left: 0;
-  bottom: 0;
   width: 264px;
   height: 40px;
   background-color: transparent;
@@ -627,14 +629,8 @@ p {
   outline: transparent;
   padding: 16px 8px;
 }
-.footer-label-input-btn {
-  gap: 24px;
-}
 
 .footer-form-btn {
-  position: absolute;
-  right: 0;
-  bottom: 0;
   border-radius: 4px;
   padding: 8px 24px;
   min-width: 165px;
@@ -670,6 +666,9 @@ p {
 }
 
 .footer-fly-icon {
+  width: 24px;
+  height: 24px;
+  flex-shrink: 0;
   fill: #fff;
   display: block;
   margin-left: 16px;
