@@ -419,7 +419,7 @@
         </div>
       </div>
     </footer>
-    <div class="backdrop">
+    <div class="backdrop is-open">
       <div class="modal">
         <p class="modal-title">Leave your contacts and we will call you back</p>
         <form>
@@ -430,7 +430,6 @@
                 type="username"
                 name="user-name"
                 class="modal-input"
-                placeholder=""
                 id="user-name"
               />
               <svg class="modal-input-icon" width="18px" height="18">
@@ -445,7 +444,6 @@
                 type="tel"
                 name="user-tel"
                 class="modal-input"
-                placeholder=""
                 id="user-tel"
               />
               <svg class="modal-input-icon" width="18px" height="24">
@@ -460,7 +458,6 @@
                 type="email"
                 name="user-email"
                 class="modal-input"
-                placeholder=""
                 id="user-email"
               />
               <svg class="modal-input-icon" width="18px" height="24">
@@ -468,7 +465,33 @@
               </svg>
             </div>
           </div>
-          <button type="submit" class="order-button">Send</button>
+          <div class="input-field">
+            <label for="user-coment" class="modal-label">Comment</label>
+            <div class="input-wrap">
+              <textarea
+                name="user-coment"
+                class="modal-text"
+                placeholder="Text input"
+                id="user-coment"
+              ></textarea>
+            </div>
+          </div>
+          <input
+            class="modal-check visually-hidden"
+            type="checkbox"
+            name="policy"
+            id="policy"
+            value="on"
+          />
+          <label for="policy" class="modal-check-text"
+            ><span class="modal-check-box"
+              ><svg class="check-item" width="10" height="8">
+                <use href="./images/icons.svg#icon-check"
+              </svg></span
+            >I accept the terms and conditions of the
+            <a href="" class="check-link">Privacy Policy</a></label
+          >
+          <button type="submit" class="send-button">Send</button>
         </form>
         <button type="button" class="modal-close">
           <svg class="close" width="8px" height="8px">
