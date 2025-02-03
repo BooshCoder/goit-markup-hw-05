@@ -309,6 +309,9 @@ p {
   align-items: center;
   gap: 8px;
 }
+.input-field-chek {
+  margin-bottom: 24px;
+}
 
 .check-link {
   color: #4d5ae5;
